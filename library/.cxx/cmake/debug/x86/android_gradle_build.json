@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "F:/FilterCamera/android-gpuimage/library/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android16 --gcc-toolchain=F:/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dyuv_decoder_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "F:\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
+    "F:\\FilterCamera\\android-gpuimage\\library\\src\\main\\cpp\\CMakeLists.txt",
+    "F:\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "F:\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\FilterCamera\\android-gpuimage\\library\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "F:\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\FilterCamera\\android-gpuimage\\library\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "yuv-decoder-Debug-x86": {
+      "buildCommand": "F:\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\FilterCamera\\android-gpuimage\\library\\.cxx\\cmake\\debug\\x86\" yuv-decoder",
+      "buildType": "debug",
+      "toolchain": "367226535",
+      "abi": "x86",
+      "artifactName": "yuv-decoder",
+      "files": [
+        {
+          "src": "F:\\FilterCamera\\android-gpuimage\\library\\src\\main\\cpp\\yuv-decoder.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "F:\\FilterCamera\\android-gpuimage\\library\\build\\intermediates\\cmake\\debug\\obj\\x86\\libyuv-decoder.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "367226535": {
+      "cCompilerExecutable": "F:\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}
