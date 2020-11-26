@@ -1,3 +1,0 @@
-F:/FilterCamera/android-gpuimage/library/.cxx/cmake/debug/x86_64/CMakeFiles/yuv-decoder.dir
-F:/FilterCamera/android-gpuimage/library/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
-F:/FilterCamera/android-gpuimage/library/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,7 +1,0 @@
-[
-{
-  "directory": "F:/FilterCamera/android-gpuimage/library/.cxx/cmake/release/x86",
-  "command": "F:\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android16 --gcc-toolchain=F:/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dyuv_decoder_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\yuv-decoder.dir\\yuv-decoder.c.o   -c F:\\FilterCamera\\android-gpuimage\\library\\src\\main\\cpp\\yuv-decoder.c",
-  "file": "F:\\FilterCamera\\android-gpuimage\\library\\src\\main\\cpp\\yuv-decoder.c"
-}
-]

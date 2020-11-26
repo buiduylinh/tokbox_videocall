@@ -1,0 +1,20 @@
+PODS:
+  - BBMetalImage (1.1.6)
+  - OpenTok (2.18.0)
+
+DEPENDENCIES:
+  - BBMetalImage
+  - OpenTok
+
+SPEC REPOS:
+  trunk:
+    - BBMetalImage
+    - OpenTok
+
+SPEC CHECKSUMS:
+  BBMetalImage: c61f7076d0727f66f7dda9ee24c7774f842e4b18
+  OpenTok: bf4c81ff741e7976542c61b8f317882f8076eede
+
+PODFILE CHECKSUM: dec2e48d94829e5c0a997610f311776edcc455a6
+
+COCOAPODS: 1.9.2

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_Video_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7h-VE-uhY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sp-Pp-KSU">
+                                <rect key="frame" x="30" y="64" width="100" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYS-qe-LfV">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                        <connections>
+                                            <action selector="didTouchLocalView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNI-nT-bhO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6SN-9r-Ipx"/>
+                                    <constraint firstItem="BYS-qe-LfV" firstAttribute="top" secondItem="4sp-Pp-KSU" secondAttribute="top" id="HIj-qR-9ge"/>
+                                    <constraint firstAttribute="trailing" secondItem="BYS-qe-LfV" secondAttribute="trailing" id="HwO-Hn-SSN"/>
+                                    <constraint firstItem="BYS-qe-LfV" firstAttribute="leading" secondItem="4sp-Pp-KSU" secondAttribute="leading" id="a5q-xn-p7e"/>
+                                    <constraint firstAttribute="width" constant="100" id="bGT-FL-xbN"/>
+                                    <constraint firstAttribute="bottom" secondItem="BYS-qe-LfV" secondAttribute="bottom" id="yhj-6G-BHY"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vOd-9n-TBZ">
+                                <rect key="frame" x="8" y="822" width="398" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="tmy-dQ-IZY"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXh-j3-Zuc">
+                                <rect key="frame" x="354" y="54" width="50" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jhp-Ia-APZ"/>
+                                    <constraint firstAttribute="width" constant="50" id="rtL-Y6-wJG"/>
+                                </constraints>
+                                <state key="normal" image="icon_switch_cam"/>
+                                <connections>
+                                    <action selector="didTouchSwitchCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tao-5g-O9k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4sp-Pp-KSU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="0GM-Bc-pOR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vOd-9n-TBZ" secondAttribute="bottom" constant="10" id="0Pa-b8-uZO"/>
+                            <constraint firstAttribute="trailing" secondItem="pXh-j3-Zuc" secondAttribute="trailing" constant="10" id="6X6-RT-bSE"/>
+                            <constraint firstItem="vOd-9n-TBZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8To-8e-l8k"/>
+                            <constraint firstItem="4sp-Pp-KSU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="9Dt-wp-jw9"/>
+                            <constraint firstAttribute="bottom" secondItem="B7h-VE-uhY" secondAttribute="bottom" id="PMy-V1-Q8X"/>
+                            <constraint firstItem="vOd-9n-TBZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="UEe-Wj-tFN"/>
+                            <constraint firstAttribute="trailing" secondItem="B7h-VE-uhY" secondAttribute="trailing" id="VOy-DT-Q8h"/>
+                            <constraint firstItem="B7h-VE-uhY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nll-mI-S1R"/>
+                            <constraint firstItem="B7h-VE-uhY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oeG-OG-mnM"/>
+                            <constraint firstItem="pXh-j3-Zuc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="pEn-kJ-QRh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="localView" destination="4sp-Pp-KSU" id="KGk-VH-Gkt"/>
+                        <outlet property="remoteView" destination="B7h-VE-uhY" id="qFr-Hn-mJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.333333333333336" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_switch_cam" width="32.5" height="17"/>
+    </resources>
+</document>
